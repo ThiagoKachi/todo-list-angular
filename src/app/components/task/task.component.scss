@@ -1,0 +1,40 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  background-color: #F4F1F4;
+  border-radius: 4px;
+  transition: all 0.2s;
+
+  &:hover {
+    background-color: #EAE7E9;
+  }
+
+  p {
+    font-size: 18px;
+    color: #444;
+    padding: 12px;
+  }
+
+  button {
+    width: 56px;
+    border: none;
+    background-color: #E74B3D;
+    border-radius: 0 4px 4px 0;
+    font-size: 32px;
+    cursor: pointer;
+    transition: all 0.2s;
+
+    &:hover {
+      background-color: #d44637;
+    }
+
+    &:active {
+      background-color: #c13a2d;
+    }
+
+    img {
+      height: 24px;
+      width: 24px;
+    }
+  }
+}
