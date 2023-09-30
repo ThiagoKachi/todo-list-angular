@@ -8,6 +8,7 @@ import { TodoBoxComponent } from './components/todo-box/todo-box.component';
 import { AddTodoComponent } from './components/add-todo/add-todo.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { TaskComponent } from './components/task/task.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { TaskComponent } from './components/task/task.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

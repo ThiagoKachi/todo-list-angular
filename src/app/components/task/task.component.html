@@ -1,6 +1,6 @@
 <div class="container">
-  <p>Study React and Angular</p>
-  <button type="button">
+  <p>{{todoDetail.title}}</p>
+  <button type="button" (click)="handleRemoveTask(todoDetail.id)">
     <img src="assets/trash.svg" alt="Trash icon button">
   </button>
 </div>

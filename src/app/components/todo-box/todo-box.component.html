@@ -1,9 +1,10 @@
 <div class="container">
   <app-header></app-header>
-  <app-add-todo></app-add-todo>
+  <app-add-todo (addTodo)="addTodo($event)"></app-add-todo>
   <div class="task-list">
-    <app-task></app-task>
-    <app-task></app-task>
+    <div *ngFor="let todo of todos">
+      <app-task [todoDetail]="todo" (removeTodo)="removeTodo($event)"></app-task>
+    </div>
   </div>
-  <app-footer></app-footer>
+  <app-footer [todosQtd]="todos.length" (removeAllTodos)="removeAllTodos()"></app-footer>
 </div>
